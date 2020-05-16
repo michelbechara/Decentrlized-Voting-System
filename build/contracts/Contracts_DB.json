@@ -1,0 +1,2073 @@
+{
+  "contractName": "Contracts_DB",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "contracts",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "contract_name",
+          "type": "string"
+        },
+        {
+          "name": "contract_address",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractsNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_contractEvent",
+          "type": "uint256"
+        }
+      ],
+      "name": "ContractEvent",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "contract_name",
+          "type": "string"
+        },
+        {
+          "name": "c_address",
+          "type": "string"
+        }
+      ],
+      "name": "addContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.25+commit.59dbf8f1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"contracts\",\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"contract_name\",\"type\":\"string\"},{\"name\":\"contract_address\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"contract_name\",\"type\":\"string\"},{\"name\":\"c_address\",\"type\":\"string\"}],\"name\":\"addContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"contractsNumber\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"removeContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_contractEvent\",\"type\":\"uint256\"}],\"name\":\"ContractEvent\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Michel Bechara/Desktop/New Folder (2)/Blockchain/hdwalletDynamic/contracts/Contracts_DB.sol\":\"Contracts_DB\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Michel Bechara/Desktop/New Folder (2)/Blockchain/hdwalletDynamic/contracts/Contracts_DB.sol\":{\"keccak256\":\"0x29a3e2e98f51b4b04d7e13b68f9c0df23e1725c930cbefaa8cf32f665df216e2\",\"urls\":[\"bzzr://6407426185385e89d39d014610ed0becc98d8a45251941433591bce477b1a8ad\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506100bb6040805190810160405280600381526020017f5553410000000000000000000000000000000000000000000000000000000000815250606060405190810160405280602a81526020017f307830363433343538663839623434463143363033324141364337324633456681526020017f6137663134466335613000000000000000000000000000000000000000000000815250610214640100000000026401000000009004565b6101656040805190810160405280600781526020017f4765726d616e7900000000000000000000000000000000000000000000000000815250606060405190810160405280602a81526020017f307837356541333831366341613233634362423837323638383146333763353181526020017f4235424233636333373500000000000000000000000000000000000000000000815250610214640100000000026401000000009004565b61020f6040805190810160405280600781526020017f4c6562616e6f6e00000000000000000000000000000000000000000000000000815250606060405190810160405280602a81526020017f307866366235433366633046303164303063323566636462333435363637303481526020017f4631413461413632613500000000000000000000000000000000000000000000815250610214640100000000026401000000009004565b61034b565b60018054810180825560408051606081018252828152602080820187815282840187905260009485528482529290932081518155915180519194929361025f938501929101906102b0565b506040820151805161027b9160028401916020909101906102b0565b50506001546040519091507fa3edf5436c8947f34f79c91d9706af988e9b1357d70e1b1f1629f968ffe87be890600090a25050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102f157805160ff191683800117855561031e565b8280016001018555821561031e579182015b8281111561031e578251825591602001919060010190610303565b5061032a92915061032e565b5090565b61034891905b8082111561032a5760008155600101610334565b90565b6105538061035a6000396000f3006080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663474da79a811461006657806349061757146101635780634d5a50f6146101fc5780637cca3b0614610223575b600080fd5b34801561007257600080fd5b5061007e60043561023b565b604051808481526020018060200180602001838103835285818151815260200191508051906020019080838360005b838110156100c55781810151838201526020016100ad565b50505050905090810190601f1680156100f25780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561012557818101518382015260200161010d565b50505050905090810190601f1680156101525780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b34801561016f57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526101fa94369492936024939284019190819084018382808284375050604080516020601f89358b018035918201839004830284018301909452808352979a9998810197919650918201945092508291508401838280828437509497506103719650505050505050565b005b34801561020857600080fd5b5061021161040d565b60408051918252519081900360200190f35b34801561022f57600080fd5b506101fa600435610413565b600060208181529181526040908190208054600180830180548551600293821615610100026000190190911692909204601f81018790048702830187019095528482529194929390928301828280156102d55780601f106102aa576101008083540402835291602001916102d5565b820191906000526020600020905b8154815290600101906020018083116102b857829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156103675780601f1061033c57610100808354040283529160200191610367565b820191906000526020600020905b81548152906001019060200180831161034a57829003601f168201915b5050505050905083565b6001805481018082556040805160608101825282815260208082018781528284018790526000948552848252929093208151815591518051919492936103bc93850192910190610445565b50604082015180516103d8916002840191602090910190610445565b50506001546040519091507fa3edf5436c8947f34f79c91d9706af988e9b1357d70e1b1f1629f968ffe87be890600090a25050565b60015481565b60008181526020819052604081208181559061043260018301826104c3565b6104406002830160006104c3565b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061048657805160ff19168380011785556104b3565b828001600101855582156104b3579182015b828111156104b3578251825591602001919060010190610498565b506104bf92915061050a565b5090565b50805460018160011615610100020316600290046000825580601f106104e95750610507565b601f016020900490600052602060002090810190610507919061050a565b50565b61052491905b808211156104bf5760008155600101610510565b905600a165627a7a72305820aaae2795241cfa8f2b0bf95cfc52eaa5bf2400458b195353a25a08762a3d24cc0029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663474da79a811461006657806349061757146101635780634d5a50f6146101fc5780637cca3b0614610223575b600080fd5b34801561007257600080fd5b5061007e60043561023b565b604051808481526020018060200180602001838103835285818151815260200191508051906020019080838360005b838110156100c55781810151838201526020016100ad565b50505050905090810190601f1680156100f25780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561012557818101518382015260200161010d565b50505050905090810190601f1680156101525780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b34801561016f57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526101fa94369492936024939284019190819084018382808284375050604080516020601f89358b018035918201839004830284018301909452808352979a9998810197919650918201945092508291508401838280828437509497506103719650505050505050565b005b34801561020857600080fd5b5061021161040d565b60408051918252519081900360200190f35b34801561022f57600080fd5b506101fa600435610413565b600060208181529181526040908190208054600180830180548551600293821615610100026000190190911692909204601f81018790048702830187019095528482529194929390928301828280156102d55780601f106102aa576101008083540402835291602001916102d5565b820191906000526020600020905b8154815290600101906020018083116102b857829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156103675780601f1061033c57610100808354040283529160200191610367565b820191906000526020600020905b81548152906001019060200180831161034a57829003601f168201915b5050505050905083565b6001805481018082556040805160608101825282815260208082018781528284018790526000948552848252929093208151815591518051919492936103bc93850192910190610445565b50604082015180516103d8916002840191602090910190610445565b50506001546040519091507fa3edf5436c8947f34f79c91d9706af988e9b1357d70e1b1f1629f968ffe87be890600090a25050565b60015481565b60008181526020819052604081208181559061043260018301826104c3565b6104406002830160006104c3565b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061048657805160ff19168380011785556104b3565b828001600101855582156104b3579182015b828111156104b3578251825591602001919060010190610498565b506104bf92915061050a565b5090565b50805460018160011615610100020316600290046000825580601f106104e95750610507565b601f016020900490600052602060002090810190610507919061050a565b50565b61052491905b808211156104bf5760008155600101610510565b905600a165627a7a72305820aaae2795241cfa8f2b0bf95cfc52eaa5bf2400458b195353a25a08762a3d24cc0029",
+  "sourceMap": "27:982:0:-;;;376:271;8:9:-1;5:2;;;30:1;27;20:12;5:2;376:271:0;419:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:11;;;:64;;;:::i;:::-;492:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:11;;;:68;;;:::i;:::-;569;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:11;;;:68;;;:::i;:::-;27:982;;655:264;732:15;:17;;;;;;;821:51;;;;;;;;;;;;;;;;;;;;;;;;732:15;794:26;;;;;;;;;;:78;;;;;;;;821:51;;794:26;;:78;;;;;;;;;:::i;:::-;-1:-1:-1;794:78:0;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;895:15:0;;881:30;;895:15;;-1:-1:-1;881:30:0;;;;;655:264;;:::o;27:982::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:982:0;;;-1:-1:-1;27:982:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:982:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:42;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;184:42:0;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;655:264;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;655:264:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;655:264:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;655:264:0;;;;-1:-1:-1;655:264:0;-1:-1:-1;655:264:0;;-1:-1:-1;655:264:0;;;;;;;;-1:-1:-1;655:264:0;;-1:-1:-1;655:264:0;;-1:-1:-1;;;;;;;655:264:0;;;235:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;235:27:0;;;;;;;;;;;;;;;;;;;;927:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;927:77:0;;;;;184:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;184:42:0;;;;;;;;;;;-1:-1:-1;;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;184:42:0;;-1:-1:-1;184:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;655:264::-;732:15;:17;;;;;;;821:51;;;;;;;;;;;;;;;;;;;;;;;;732:15;794:26;;;;;;;;;;:78;;;;;;;;821:51;;794:26;;:78;;;;;;;;;:::i;:::-;-1:-1:-1;794:78:0;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;895:15:0;;881:30;;895:15;;-1:-1:-1;881:30:0;;;;;655:264;;:::o;235:27::-;;;;:::o;927:77::-;983:9;:13;;;;;;;;;;976:20;;;983:13;976:20;;;;983:9;976:20;:::i;:::-;;;;;;;:::i;:::-;;;927:77;:::o;27:982::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:982:0;;;-1:-1:-1;27:982:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.0;\r\n\r\ncontract Contracts_DB { //Form the contract\r\n    struct Contract{\r\n      uint id;\r\n      string contract_name;\r\n      string contract_address;\r\n    }\r\n\r\n    mapping(uint => Contract) public contracts;\r\n\r\n    uint public contractsNumber; //how many contracts there are\r\n\r\n    event ContractEvent (\r\n        uint indexed _contractEvent\r\n    );\r\n\r\n    constructor() public{ //constructor\r\n      addContract(\"USA\", \"0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0\");\r\n      addContract(\"Germany\", \"0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375\");\r\n      addContract(\"Lebanon\", \"0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5\");\r\n\r\n    }\r\n\r\n    function addContract (string contract_name, string c_address) public{\r\n      contractsNumber++; //increment the number of contracts\r\n      contracts[contractsNumber]=Contract(contractsNumber, contract_name, c_address);\r\n      ContractEvent(contractsNumber);\r\n    }\r\n\r\n    function removeContract (uint id) public{\r\n      delete contracts[id];\r\n    }\r\n\r\n}\r\n",
+  "sourcePath": "C:\\Users\\Michel Bechara\\Desktop\\New Folder (2)\\Blockchain\\hdwalletDynamic\\contracts\\Contracts_DB.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Michel Bechara/Desktop/New Folder (2)/Blockchain/hdwalletDynamic/contracts/Contracts_DB.sol",
+    "exportedSymbols": {
+      "Contracts_DB": [
+        74
+      ]
+    },
+    "id": 75,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 74,
+        "linearizedBaseContracts": [
+          74
+        ],
+        "name": "Contracts_DB",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Contracts_DB.Contract",
+            "id": 8,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "100:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "100:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "contract_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "116:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "116:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "contract_address",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "145:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "145:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Contract",
+            "nodeType": "StructDefinition",
+            "scope": 74,
+            "src": "76:100:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "contracts",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "184:42:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+              "typeString": "mapping(uint256 => struct Contracts_DB.Contract)"
+            },
+            "typeName": {
+              "id": 11,
+              "keyType": {
+                "id": 9,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "192:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "184:25:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                "typeString": "mapping(uint256 => struct Contracts_DB.Contract)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 10,
+                "name": "Contract",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 8,
+                "src": "200:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Contract_$8_storage_ptr",
+                  "typeString": "struct Contracts_DB.Contract"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "contractsNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "235:27:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "235:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 18,
+            "name": "ContractEvent",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 16,
+                  "indexed": true,
+                  "name": "_contractEvent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18,
+                  "src": "333:27:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "333:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:45:0"
+            },
+            "src": "302:66:0"
+          },
+          {
+            "body": {
+              "id": 36,
+              "nodeType": "Block",
+              "src": "396:251:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "555341",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "431:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_49c6e58c6575a5d882a961ebdf6ae361f3277f3b663db933086d11a62f44d90a",
+                          "typeString": "literal_string \"USA\""
+                        },
+                        "value": "USA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307830363433343538663839623434463143363033324141364337324633456661376631344663356130",
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "438:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2fe545b88c6288fd5f3a835fa464fbd3d1b000eb11765c002b6c037b76c25ca5",
+                          "typeString": "literal_string \"0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0\""
+                        },
+                        "value": "0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_49c6e58c6575a5d882a961ebdf6ae361f3277f3b663db933086d11a62f44d90a",
+                          "typeString": "literal_string \"USA\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_2fe545b88c6288fd5f3a835fa464fbd3d1b000eb11765c002b6c037b76c25ca5",
+                          "typeString": "literal_string \"0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0\""
+                        }
+                      ],
+                      "id": 21,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "419:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 24,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "419:64:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 25,
+                  "nodeType": "ExpressionStatement",
+                  "src": "419:64:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4765726d616e79",
+                        "id": 27,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "504:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbcfdbe5eb8eaa78138f6ebc7a1decd096eb01b5f9bed01e0e4b7cd56c394a72",
+                          "typeString": "literal_string \"Germany\""
+                        },
+                        "value": "Germany"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307837356541333831366341613233634362423837323638383146333763353142354242336363333735",
+                        "id": 28,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "515:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d6cb6330320e70d6741b8bdde1e12a4a3afa0ce987b6e6b401edd6b84a70b747",
+                          "typeString": "literal_string \"0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375\""
+                        },
+                        "value": "0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbcfdbe5eb8eaa78138f6ebc7a1decd096eb01b5f9bed01e0e4b7cd56c394a72",
+                          "typeString": "literal_string \"Germany\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d6cb6330320e70d6741b8bdde1e12a4a3afa0ce987b6e6b401edd6b84a70b747",
+                          "typeString": "literal_string \"0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375\""
+                        }
+                      ],
+                      "id": 26,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "492:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "492:68:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 30,
+                  "nodeType": "ExpressionStatement",
+                  "src": "492:68:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4c6562616e6f6e",
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "581:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_28eae947e209f4b0422812701458c6d0a27fbe7b5f7592fe29469f0f6d1a9a4f",
+                          "typeString": "literal_string \"Lebanon\""
+                        },
+                        "value": "Lebanon"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307866366235433366633046303164303063323566636462333435363637303446314134614136326135",
+                        "id": 33,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "592:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a62d5ae6c6a3d4639fc28a8c385f874975c0ae18b3c727fce115d8fb25fe2ead",
+                          "typeString": "literal_string \"0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5\""
+                        },
+                        "value": "0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_28eae947e209f4b0422812701458c6d0a27fbe7b5f7592fe29469f0f6d1a9a4f",
+                          "typeString": "literal_string \"Lebanon\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a62d5ae6c6a3d4639fc28a8c385f874975c0ae18b3c727fce115d8fb25fe2ead",
+                          "typeString": "literal_string \"0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5\""
+                        }
+                      ],
+                      "id": 31,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "569:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "569:68:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "569:68:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 37,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "387:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "396:0:0"
+            },
+            "scope": 74,
+            "src": "376:271:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "723:196:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "732:17:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 44,
+                      "name": "contractsNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "732:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "732:17:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 47,
+                        "name": "contracts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "794:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                          "typeString": "mapping(uint256 => struct Contracts_DB.Contract storage ref)"
+                        }
+                      },
+                      "id": 49,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 48,
+                        "name": "contractsNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "804:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "794:26:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_storage",
+                        "typeString": "struct Contracts_DB.Contract storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 51,
+                          "name": "contractsNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 14,
+                          "src": "830:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 52,
+                          "name": "contract_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 39,
+                          "src": "847:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "c_address",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 41,
+                          "src": "862:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 50,
+                        "name": "Contract",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "821:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Contract_$8_storage_ptr_$",
+                          "typeString": "type(struct Contracts_DB.Contract storage pointer)"
+                        }
+                      },
+                      "id": 54,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "821:51:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_memory",
+                        "typeString": "struct Contracts_DB.Contract memory"
+                      }
+                    },
+                    "src": "794:78:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Contract_$8_storage",
+                      "typeString": "struct Contracts_DB.Contract storage ref"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "794:78:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "contractsNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "895:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 57,
+                      "name": "ContractEvent",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "881:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "881:30:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 60,
+                  "nodeType": "ExpressionStatement",
+                  "src": "881:30:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "name": "contract_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "677:20:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "677:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41,
+                  "name": "c_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "699:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "699:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "676:40:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "723:0:0"
+            },
+            "scope": 74,
+            "src": "655:264:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 72,
+              "nodeType": "Block",
+              "src": "967:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 70,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "976:20:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 67,
+                        "name": "contracts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "983:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                          "typeString": "mapping(uint256 => struct Contracts_DB.Contract storage ref)"
+                        }
+                      },
+                      "id": 69,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 68,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "993:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "983:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_storage",
+                        "typeString": "struct Contracts_DB.Contract storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 71,
+                  "nodeType": "ExpressionStatement",
+                  "src": "976:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 73,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "removeContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "952:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 63,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:9:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "967:0:0"
+            },
+            "scope": 74,
+            "src": "927:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 75,
+        "src": "27:982:0"
+      }
+    ],
+    "src": "0:1011:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Michel Bechara/Desktop/New Folder (2)/Blockchain/hdwalletDynamic/contracts/Contracts_DB.sol",
+    "exportedSymbols": {
+      "Contracts_DB": [
+        74
+      ]
+    },
+    "id": 75,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 74,
+        "linearizedBaseContracts": [
+          74
+        ],
+        "name": "Contracts_DB",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Contracts_DB.Contract",
+            "id": 8,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "100:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "100:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "contract_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "116:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "116:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "contract_address",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "145:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "145:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Contract",
+            "nodeType": "StructDefinition",
+            "scope": 74,
+            "src": "76:100:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "contracts",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "184:42:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+              "typeString": "mapping(uint256 => struct Contracts_DB.Contract)"
+            },
+            "typeName": {
+              "id": 11,
+              "keyType": {
+                "id": 9,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "192:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "184:25:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                "typeString": "mapping(uint256 => struct Contracts_DB.Contract)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 10,
+                "name": "Contract",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 8,
+                "src": "200:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Contract_$8_storage_ptr",
+                  "typeString": "struct Contracts_DB.Contract"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "contractsNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 74,
+            "src": "235:27:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "235:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 18,
+            "name": "ContractEvent",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 16,
+                  "indexed": true,
+                  "name": "_contractEvent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18,
+                  "src": "333:27:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "333:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:45:0"
+            },
+            "src": "302:66:0"
+          },
+          {
+            "body": {
+              "id": 36,
+              "nodeType": "Block",
+              "src": "396:251:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "555341",
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "431:5:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_49c6e58c6575a5d882a961ebdf6ae361f3277f3b663db933086d11a62f44d90a",
+                          "typeString": "literal_string \"USA\""
+                        },
+                        "value": "USA"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307830363433343538663839623434463143363033324141364337324633456661376631344663356130",
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "438:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2fe545b88c6288fd5f3a835fa464fbd3d1b000eb11765c002b6c037b76c25ca5",
+                          "typeString": "literal_string \"0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0\""
+                        },
+                        "value": "0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_49c6e58c6575a5d882a961ebdf6ae361f3277f3b663db933086d11a62f44d90a",
+                          "typeString": "literal_string \"USA\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_2fe545b88c6288fd5f3a835fa464fbd3d1b000eb11765c002b6c037b76c25ca5",
+                          "typeString": "literal_string \"0x0643458f89b44F1C6032AA6C72F3Efa7f14Fc5a0\""
+                        }
+                      ],
+                      "id": 21,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "419:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 24,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "419:64:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 25,
+                  "nodeType": "ExpressionStatement",
+                  "src": "419:64:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4765726d616e79",
+                        "id": 27,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "504:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbcfdbe5eb8eaa78138f6ebc7a1decd096eb01b5f9bed01e0e4b7cd56c394a72",
+                          "typeString": "literal_string \"Germany\""
+                        },
+                        "value": "Germany"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307837356541333831366341613233634362423837323638383146333763353142354242336363333735",
+                        "id": 28,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "515:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d6cb6330320e70d6741b8bdde1e12a4a3afa0ce987b6e6b401edd6b84a70b747",
+                          "typeString": "literal_string \"0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375\""
+                        },
+                        "value": "0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbcfdbe5eb8eaa78138f6ebc7a1decd096eb01b5f9bed01e0e4b7cd56c394a72",
+                          "typeString": "literal_string \"Germany\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d6cb6330320e70d6741b8bdde1e12a4a3afa0ce987b6e6b401edd6b84a70b747",
+                          "typeString": "literal_string \"0x75eA3816cAa23cCbB8726881F37c51B5BB3cc375\""
+                        }
+                      ],
+                      "id": 26,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "492:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "492:68:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 30,
+                  "nodeType": "ExpressionStatement",
+                  "src": "492:68:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4c6562616e6f6e",
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "581:9:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_28eae947e209f4b0422812701458c6d0a27fbe7b5f7592fe29469f0f6d1a9a4f",
+                          "typeString": "literal_string \"Lebanon\""
+                        },
+                        "value": "Lebanon"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "307866366235433366633046303164303063323566636462333435363637303446314134614136326135",
+                        "id": 33,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "592:44:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a62d5ae6c6a3d4639fc28a8c385f874975c0ae18b3c727fce115d8fb25fe2ead",
+                          "typeString": "literal_string \"0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5\""
+                        },
+                        "value": "0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_28eae947e209f4b0422812701458c6d0a27fbe7b5f7592fe29469f0f6d1a9a4f",
+                          "typeString": "literal_string \"Lebanon\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a62d5ae6c6a3d4639fc28a8c385f874975c0ae18b3c727fce115d8fb25fe2ead",
+                          "typeString": "literal_string \"0xf6b5C3fc0F01d00c25fcdb34566704F1A4aA62a5\""
+                        }
+                      ],
+                      "id": 31,
+                      "name": "addContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "569:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "569:68:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "569:68:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 37,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "387:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "396:0:0"
+            },
+            "scope": 74,
+            "src": "376:271:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "723:196:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "732:17:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 44,
+                      "name": "contractsNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "732:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "732:17:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 47,
+                        "name": "contracts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "794:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                          "typeString": "mapping(uint256 => struct Contracts_DB.Contract storage ref)"
+                        }
+                      },
+                      "id": 49,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 48,
+                        "name": "contractsNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "804:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "794:26:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_storage",
+                        "typeString": "struct Contracts_DB.Contract storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 51,
+                          "name": "contractsNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 14,
+                          "src": "830:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 52,
+                          "name": "contract_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 39,
+                          "src": "847:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "c_address",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 41,
+                          "src": "862:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 50,
+                        "name": "Contract",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "821:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Contract_$8_storage_ptr_$",
+                          "typeString": "type(struct Contracts_DB.Contract storage pointer)"
+                        }
+                      },
+                      "id": 54,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "821:51:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_memory",
+                        "typeString": "struct Contracts_DB.Contract memory"
+                      }
+                    },
+                    "src": "794:78:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Contract_$8_storage",
+                      "typeString": "struct Contracts_DB.Contract storage ref"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "794:78:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "contractsNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "895:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 57,
+                      "name": "ContractEvent",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "881:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "881:30:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 60,
+                  "nodeType": "ExpressionStatement",
+                  "src": "881:30:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "name": "contract_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "677:20:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "677:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41,
+                  "name": "c_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "699:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "699:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "676:40:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "723:0:0"
+            },
+            "scope": 74,
+            "src": "655:264:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 72,
+              "nodeType": "Block",
+              "src": "967:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 70,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "976:20:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 67,
+                        "name": "contracts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "983:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Contract_$8_storage_$",
+                          "typeString": "mapping(uint256 => struct Contracts_DB.Contract storage ref)"
+                        }
+                      },
+                      "id": 69,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 68,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "993:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "983:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contract_$8_storage",
+                        "typeString": "struct Contracts_DB.Contract storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 71,
+                  "nodeType": "ExpressionStatement",
+                  "src": "976:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 73,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "removeContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "952:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 63,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:9:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "967:0:0"
+            },
+            "scope": 74,
+            "src": "927:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 75,
+        "src": "27:982:0"
+      }
+    ],
+    "src": "0:1011:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xcdcaa673a80e07d144e0bc7b7c76332f95774cac",
+      "transactionHash": "0xf300aea1934090f71817b4060b1174b292c967ed737c831413e7e44757de3ad0"
+    },
+    "4": {
+      "events": {
+        "0xa3edf5436c8947f34f79c91d9706af988e9b1357d70e1b1f1629f968ffe87be8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_contractEvent",
+              "type": "uint256"
+            }
+          ],
+          "name": "ContractEvent",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xBb9766c2e928B9fE39c1c63C98C0660BE19FBd46",
+      "transactionHash": "0x944a0d078be36657cf371383b3978bf4dc291f6e65bbceac9122cccbb273cd34"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-05-09T21:46:46.906Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
